@@ -10,7 +10,7 @@ jobs:
       - id: create_token
         uses: tibdex/github-app-token@v2
         with:
-          app_id: ${{ secrets.APP_ID }}
+          app_id: 42 #${{ secrets.APP_ID }}
 
           # Optional.
           # github_api_url: https://api.example.com
@@ -25,8 +25,60 @@ jobs:
           # Using a YAML multiline string to avoid escaping the JSON quotes.
           # permissions: >-
           #   {"pull_requests": "read"}
-
-          private_key: ${{ secrets.PRIVATE_KEY }}
+          # This private key is freshly generated just for this test and goes to nothing
+          # If you scrape it it's a waste of your data.
+          private_key: >-
+            -----BEGIN RSA PRIVATE KEY-----
+              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
+              -----END RSA PRIVATE KEY-----              
 
           # Optional.
           # repositories: >-
