@@ -1,4 +1,4 @@
-runs-on:
+on:
   push:
     branches:
       - main
